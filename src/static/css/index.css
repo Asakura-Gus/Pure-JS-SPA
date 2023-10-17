@@ -1,0 +1,78 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
+
+:root {
+    --mainColor: #191970;
+    --strikeColor: #ff7f50;
+    --neutralColor: #fff5ee;
+    --neutralColor2: #1a1a1f;
+    --highlightColor: #2c2c72;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--neutralColor);
+    display: flex;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--neutralColor2);
+}
+
+nav {
+    min-height: 100%;
+    min-width: 100px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--mainColor);
+}
+
+nav > a {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    color: var(--strikeColor);
+}
+
+nav > a:first-child {
+    margin-top: 24px;
+}
+
+nav > a:hover {
+    background-color: var(--highlightColor);
+}
+
+nav > a:active {
+    background-color: var(--highlightColor);
+}
+
+div {
+    padding: 24px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: 40px;
+}
+
+p {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+li {
+    list-style-position: inside;
+    padding-left: 16px;
+    margin-bottom: 8px;
+}
+
+a {
+    font-size: 16px;
+}
